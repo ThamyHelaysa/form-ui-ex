@@ -1,4 +1,4 @@
-import mask from "../handler/mask-tel.js";
+import maskPhone from "../handler/mask-tel.js";
 
 export default class InputTel extends HTMLInputElement {
 
@@ -10,8 +10,7 @@ export default class InputTel extends HTMLInputElement {
     super()
 
     this.onkeyup = (evt) => {
-      var val = this.value;
-      this.value = mask(this.value);
+      this.value = maskPhone(this.value);
     }
 
   }

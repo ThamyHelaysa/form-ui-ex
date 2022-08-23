@@ -1,5 +1,6 @@
 import FormUI from "./components/form-ui.js";
 import InputTel from "./components/input-number.js";
+import InputTaxvat from "./components/input-taxvat.js";
 
 /**
  * Define custom constructor
@@ -15,3 +16,4 @@ import InputTel from "./components/input-number.js";
 
 defineCustomElements("form-ui", FormUI, {extends: "form"});
 defineCustomElements("input-tel", InputTel, {extends: "input"})
+defineCustomElements("input-taxvat", InputTaxvat, {extends: "input"})
