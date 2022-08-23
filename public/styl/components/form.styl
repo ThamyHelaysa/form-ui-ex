@@ -1,0 +1,22 @@
+form
+  .content > form 
+    flex: 1 1 auto
+    max-width: 944px
+
+fieldset
+  > legend 
+    margin-bottom: space-l
+    text-align: center
+  > .box 
+    flex: 1 1 30%
+    @media (max-width: mobile-break)
+      flex-basis: 80%
+      flex-grow: 0
+
+.box-action
+  flex: 0 0 100%
+  text-align: center
+  > button
+    width: 224px 
+    @media (max-width: mobile-break)
+      width: 80%

@@ -6,9 +6,6 @@ app.get(/.+\.(js|ico|html|png|jpg|css|map|json)$/, function(req, res) {
   res.sendFile(req.originalUrl.replace(/^./, ""), { root : __dirname});
 });
 
-// app.get('/', function(request, response){
-//   response.sendFile('/public/index.html' , { root : __dirname}); //('./public/index.html');
-// });
 app.get(/.+$/, function(req, res) {
   res.sendFile("/public/index.html", { root : __dirname});
 });

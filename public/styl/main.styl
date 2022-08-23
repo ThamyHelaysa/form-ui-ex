@@ -1,1 +1,21 @@
+@import "./variables/*";
+@import "./components/*"
 @import "./reset.styl";
+@import "./theme.styl";
+
+.page-wrapper
+  display: grid;
+  grid-template-areas: \
+      "content" \
+      "copy";
+  grid-template-rows: 2fr auto
+  gap: space-m
+  height: 100vh
+  > .content
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: space-s space-s 0 space-s
+

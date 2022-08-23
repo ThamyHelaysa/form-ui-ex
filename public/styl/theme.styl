@@ -1,0 +1,33 @@
+html, body
+  font-family: 'Montserrat', sans-serif;
+
+h1
+  p-highlight()
+
+form fieldset
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-around
+  gap: space-l space-s
+  @media (max-width: mobile-break)
+    gap space-s
+
+input[type="text"]
+  input-default()
+  &:focus, &:active
+    input-focus()
+  .error &
+    input-error()
+
+label
+  display: block
+  margin-bottom: space-xs
+  font-size: 14px
+
+button, .btn
+  button-default()
+  &:hover 
+    button-hover()
+  &:disabled
+    button-disabled()

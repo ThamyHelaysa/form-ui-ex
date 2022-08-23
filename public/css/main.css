@@ -1,3 +1,53 @@
+.copyright {
+  align-self: flex-end;
+  padding: 16px;
+  border-top: 1px solid #d0d0d0;
+  color: #282828;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+form .content > form {
+  flex: 1 1 auto;
+  max-width: 944px;
+}
+fieldset > legend {
+  margin-bottom: 32px;
+  text-align: center;
+}
+fieldset > .box {
+  flex: 1 1 30%;
+}
+@media (max-width: 599px) {
+  fieldset > .box {
+    flex-basis: 80%;
+    flex-grow: 0;
+  }
+}
+.box-action {
+  flex: 0 0 100%;
+  text-align: center;
+}
+.box-action > button {
+  width: 224px;
+}
+@media (max-width: 599px) {
+  .box-action > button {
+    width: 100%;
+  }
+}
+.heading-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 100%;
+  margin-bottom: 48px;
+}
+.error {
+  color: #f00;
+  font-size: 12px;
+  font-weight: 400;
+}
 html {
   box-sizing: border-box;
 /* Nicer looking fonts for OS X and iOS */
@@ -38,7 +88,7 @@ p {
 /* You'll want to set font-size as needed. */
   font-size: 1rem;
 /* No bold for h tags unless you want it */
-  font-weight: 400;
+  font-weight: 500;
 }
 base,
 basefont,
@@ -125,4 +175,80 @@ li {
 }
 body {
   box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+form fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px 16px;
+}
+@media (max-width: 599px) {
+  form fieldset {
+    gap: 16px;
+  }
+}
+input[type="text"] {
+  padding: 11px 14px;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d0d0d0;
+  border-radius: 2px;
+  color: #282828;
+  font-size: 14px;
+}
+input[type="text"]:focus,
+input[type="text"]:active {
+  border-color: #1e5bc6;
+}
+.error input[type="text"] {
+  border-color: #f00;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+button,
+.btn {
+  padding: 12px 24px;
+  background-color: #1e5bc6;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+}
+button:hover,
+.btn:hover {
+  background-color: #002c7a;
+}
+button:disabled,
+.btn:disabled {
+  background-color: #d0d0d0;
+  cursor: not-allowed;
+}
+.page-wrapper {
+  display: grid;
+  grid-template-areas: "content" "copy";
+  grid-template-rows: 2fr auto;
+  gap: 24px;
+  height: 100vh;
+}
+.page-wrapper > .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 16px 16px 0 16px;
 }
