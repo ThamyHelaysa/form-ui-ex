@@ -1,0 +1,25 @@
+{
+  "name": "form-ui-ex",
+  "version": "1.0.0",
+  "description": "Semi Functional form with an simple Design System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "css": "stylus ./public/styl/main.styl -o ./public/css",
+    "stylus": "stylus -w ./public/styl/main.styl -o ./public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThamyHelaysa/form-ui-ex.git"
+  },
+  "author": "Thamires Helaysa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThamyHelaysa/form-ui-ex/issues"
+  },
+  "homepage": "https://github.com/ThamyHelaysa/form-ui-ex#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "stylus": "^0.59.0"
+  }
+}
