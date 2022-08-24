@@ -12,6 +12,10 @@
   </noscript>
   <title>Home</title>
   <link rel="stylesheet" href="./public/css/main.css">
+  <script>
+    if (!self.customElements || !(self.chrome || self.netscape))
+      document.write('<script src="//unpkg.com/@ungap/custom-elements"><\x2fscript>');
+  </script>
   <script defer type="module" src="./public/js/index.js"></script>
 </head>
 <body>
