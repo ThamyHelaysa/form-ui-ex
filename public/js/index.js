@@ -15,5 +15,5 @@ import InputTaxvat from "./components/input-taxvat.js";
 }
 
 defineCustomElements("form-ui", FormUI, {extends: "form"});
-defineCustomElements("input-tel", InputTel, {extends: "input"})
-defineCustomElements("input-taxvat", InputTaxvat, {extends: "input"})
+defineCustomElements("input-tel", InputTel, {extends: "input"});
+defineCustomElements("input-taxvat", InputTaxvat, {extends: "input"});

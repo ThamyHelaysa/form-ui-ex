@@ -2,8 +2,8 @@ export default class FormUI extends HTMLFormElement {
   constructor(){
     super();
 
-    const buttonAction = this.elements.action;
-
+    this.buttonAction = this.elements.action;
+    
     this.onsubmit = (evt) => {
       evt.preventDefault();
 
@@ -15,5 +15,18 @@ export default class FormUI extends HTMLFormElement {
   }
   connectedCallback(){
 
+    var  { cel, cpf, email } = this.elements
+    var formInputs = [ cel, cpf, email ]
+    formInputs.forEach((input)=>{
+      input.addEventListener('keyup', (ev)=>{
+        if(this.checkValidity()){
+          this.buttonAction.removeAttribute("disabled");
+        } else {
+          this.buttonAction.setAttribute("disabled", "");
+        }
+      })
+    })
+
   }
+
 }

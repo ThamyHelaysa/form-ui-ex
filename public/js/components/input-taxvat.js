@@ -9,7 +9,7 @@ export default class InputTaxvat extends HTMLInputElement {
   constructor(){
     super();
 
-    this.onkeyup = (evt) => {
+    this.oninput = (evt) => {
       this.value = maskTaxvat(this.value);
     }
 

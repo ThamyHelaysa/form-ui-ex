@@ -13,11 +13,11 @@ form fieldset
   @media (max-width: mobile-break)
     gap space-s
 
-input[type="text"]
+input
   input-default()
   &:focus, &:active
     input-focus()
-  .error &
+  &:focus:invalid
     input-error()
 
 label

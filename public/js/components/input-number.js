@@ -9,7 +9,7 @@ export default class InputTel extends HTMLInputElement {
   constructor(){
     super()
 
-    this.onkeyup = (evt) => {
+    this.oninput = (evt) => {
       this.value = maskPhone(this.value);
     }
 
