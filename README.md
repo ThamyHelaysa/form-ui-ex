@@ -110,11 +110,11 @@ Eles estão na página montados da seguinte forma:
 
 #### Handlers
 
-Os arquivos handlers disponíveis em `public/js/handler` são reponsáveis por implementar as máscaras nos campos de *Celular* e *Cpf* utilizando *Regex*.
+Os arquivos handlers disponíveis em `public/js/handler` são responsáveis por implementar as máscaras nos campos de *Celular* e *Cpf* utilizando *Regex*.
 
 ##### mask-taxvat
 
-Responsável por retornar uma string que não permites caracteres especiais e nem letras no formato `123.456.789-01`:
+Responsável por retornar uma string que não permite caracteres especiais e nem letras no formato `123.456.789-01`:
 
 ```
 const maskTaxvat = (val) => {
@@ -128,7 +128,7 @@ const maskTaxvat = (val) => {
 
 ##### mask-tel
 
-Responsável por retornar uma string que não permite caracteres especiais e nem letras no formato `(xx) xxxxx-xxxx`:
+Também responsável por retornar uma string que não permite caracteres especiais e nem letras mas no formato `(xx) xxxxx-xxxx`:
 
 ```
 const maskPhone = (val)=>{
