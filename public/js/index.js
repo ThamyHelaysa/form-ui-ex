@@ -1,6 +1,8 @@
 import FormUI from "./components/form-ui.js";
 import InputTel from "./components/input-number.js";
 import InputTaxvat from "./components/input-taxvat.js";
+import InputEmail from "./components/input-email.js";
+import ErrorMessage from "./components/error-message.js";
 
 /**
  * Define custom constructor
@@ -17,3 +19,13 @@ import InputTaxvat from "./components/input-taxvat.js";
 defineCustomElements("form-ui", FormUI, {extends: "form"});
 defineCustomElements("input-tel", InputTel, {extends: "input"});
 defineCustomElements("input-taxvat", InputTaxvat, {extends: "input"});
+defineCustomElements("input-email", InputEmail, {extends: "input"});
+defineCustomElements("error-message", ErrorMessage);
+
+/**
+ * Listen to custom validity event and
+ * sets the value to the messsage element
+ */
+window.addEventListener("input:error", ({detail})=>{
+  document.querySelector(`input[is='${detail.el}'] + error-message`).setAttribute("data-msg", `${detail.value}`);
+});

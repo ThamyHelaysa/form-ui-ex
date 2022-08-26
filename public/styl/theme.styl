@@ -17,7 +17,8 @@ input
   input-default()
   &:focus, &:active
     input-focus()
-  &:focus:invalid
+  &:focus:invalid,
+  &.on-error
     input-error()
 
 label
