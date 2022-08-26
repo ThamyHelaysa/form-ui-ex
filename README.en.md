@@ -1,6 +1,10 @@
 # form-ui-ex
 A semi functional form with Design System
 
+## Challenge:
+1. Createa form with three fields with mask on two of them (celular and CPF) :heavy_check_mark:
+1. Only after the fulfillment of the fields the form can be submitted :heavy_check_mark:
+
 *Read this in other language: [English](README.en.md), [Portuguese](/README.md).*
 
 
@@ -25,7 +29,7 @@ Located in the root of the project the [`app.js`](/app.js) file uses `Node` and 
 
 ## Setup
 
-To run the application you need [`Node.js`](https://nodejs.org/en/) installed in your machine. After the install you can run `node app.js` to see the application. A sucess message should appear in the terminal:
+To run the application you need [`Node.js`](https://nodejs.org/en/) installed in your machine. After the install you can run `node app.js` to see the application. A success message should appear in the terminal:
 
 ```
 Server de pé em http://localhost:3000
@@ -51,7 +55,7 @@ Bellow is the project design and every component:
 
 #### Stylus
 
-As a preprocessor it was used [Stylus](https://stylus-docs.netlify.app/). The final archive is build in `./public/css` and the source is in `./public/styl`.
+As a preprocessor it was used [Stylus](https://stylus-docs.netlify.app/). The final archive is build in `/public/css` and the source is in `/public/styl`.
 
 The folders and files located in `/public/styl` were organized as follows:
 

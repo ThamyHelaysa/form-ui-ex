@@ -1,6 +1,10 @@
 # form-ui-ex
 Um formulário semi-funcional com um simples Design System.
 
+## Desafio:
+1. Criar um formulário com três campos com máscara em 2 deles (celular e CPF) :heavy_check_mark:
+1. Somente após o preenchimento dos três campos o botão de "Próximo" poderá se tornar clicável :heavy_check_mark:
+
 *Read this in other language: [English](README.en.md), [Portuguese](/README.md).*
 
 ## Índice
@@ -50,7 +54,7 @@ Abaixo está o design do projeto e cada componente:
 
 #### Stylus
 
-Como pré-processador foi utilizado o [Stylus](https://stylus-docs.netlify.app/). O arquivo final gerado ficou em `./public/css` e o de origem em `./public/styl`.
+Como pré-processador foi utilizado o [Stylus](https://stylus-docs.netlify.app/). O arquivo final gerado ficou em `/public/css` e o de origem em `/public/styl`.
 
 As pastas e arquivos localizados em `/public/styl` ficaram organizados da seguinte maneira:
 
