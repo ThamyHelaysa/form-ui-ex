@@ -32,7 +32,7 @@ Server de pé em http://localhost:3000
 
 ## Páginas
 
-O projeto só utiliza uma página `html` localizada em [`public/index.html`](/public/index.html). Lá todos os componentes e scripts dão vida ao `form-ui`.
+O projeto utiliza somente uma página `html` localizada em [`public/index.html`](/public/index.html). Lá todos os componentes e scripts dão vida ao `form-ui`.
 
 ## Estilo
 
