@@ -21,7 +21,7 @@ export default class InputTaxvat extends HTMLInputElement {
       if(this.validity.patternMismatch){
         evt.target.parentNode.classList.add("on-error");
         evt.target.classList.add("on-error");
-        var errorMsg = "Ops 😮, não parece que o CPF está completo."
+        var errorMsg = "Ops 😮, acho que o CPF está incompleto."
       } else {
         evt.target.parentNode.classList.remove("on-error");
         evt.target.classList.remove("on-error");
