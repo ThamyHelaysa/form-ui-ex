@@ -20,6 +20,8 @@ input
   &:focus:invalid,
   &.on-error
     input-error()
+  &:valid:not(:focus)
+    border-color: brand-black
 
 label
   display: block

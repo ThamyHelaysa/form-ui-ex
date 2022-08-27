@@ -216,6 +216,9 @@ input:focus:invalid,
 input.on-error {
   border-color: #f00;
 }
+input:valid:not(:focus) {
+  border-color: #282828;
+}
 label {
   display: block;
   margin-bottom: 8px;
