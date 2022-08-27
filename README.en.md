@@ -2,7 +2,7 @@
 A semi functional form with Design System
 
 ## Challenge:
-1. Createa form with three fields with mask on two of them (celular and CPF) :heavy_check_mark:
+1. Create a form with three fields with mask on two of them (celular and CPF) :heavy_check_mark:
 1. Only after the fulfillment of the fields the form can be submitted :heavy_check_mark:
 
 *Read this in other language: [English](README.en.md), [Portuguese](/README.md).*
